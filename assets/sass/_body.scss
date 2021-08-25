@@ -1,18 +1,19 @@
 body {
   background-color: $grey;
   font-family: $mainFont;
-  color: $cyan;
-  overflow-x: hidden;
-  // background: $grey url('../img/corvo-odin.png') center 0 no-repeat;
-  // background-size: contain;
-  
+  color: $white;
+  overflow-x: hidden; 
 
   h1 {
     color: $white;
   }
 
-  .wolf {
-    border: solid 2px red;
-    height: 944.88188976px !important;
+  a {
+    color: $blue;
+
+    &:hover {
+      color: $cyan;
+    }
   }
+
 }
