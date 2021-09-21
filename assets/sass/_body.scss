@@ -4,15 +4,11 @@ body {
   color: $white;
   overflow-x: hidden; 
 
-  h1 {
-    color: $white;
-  }
-
   a {
     color: $blue;
 
     &:hover {
-      color: $cyan;
+      color: $white;
     }
   }
 
@@ -20,6 +16,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    .stroke {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-top: solid 4px $cyan;
+      border-bottom: solid 4px $cyan;
+    }
+    
 
     .especial {
       display: block;
