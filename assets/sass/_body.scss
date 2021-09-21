@@ -12,55 +12,26 @@ body {
     }
   }
 
-/*   .conenoc {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    .stroke {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-top: solid 4px $cyan;
-      border-bottom: solid 4px $cyan;
-    }
-    
-
-    .especial {
-      display: block;
-      font-size: 100%;
-      
-      &::before {
-        display: block;
-        content: '≡';
-      }
-
-      > span {
-        display: none;
-      }
-    }
-
-    .revert {
-      transform: scaleX(-1);
-    }
-  } */
-
   .conenoc {
     display: flex;
     justify-content: center;
     align-items: center;
 
-    .revert {
-      transform: scaleX(-1);
-      margin-left: -4px;
-    }
-
     .stroke {
       display: flex;
       justify-content: center;
       align-items: center;
       border-top: solid 4px $cyan;
       border-bottom: solid 4px $cyan;
+
+      div:first-child {
+        margin-right: -2px;
+      }
+
+      .revert {
+        transform: scaleX(-1);
+        margin-left: -2px;
+      }
     }
   }
 }
