@@ -12,7 +12,7 @@ body {
     }
   }
 
-  .conenoc {
+/*   .conenoc {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,6 +43,24 @@ body {
     .revert {
       transform: scaleX(-1);
     }
-  }
+  } */
 
+  .conenoc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .revert {
+      transform: scaleX(-1);
+      margin-left: -4px;
+    }
+
+    .stroke {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-top: solid 4px $cyan;
+      border-bottom: solid 4px $cyan;
+    }
+  }
 }
