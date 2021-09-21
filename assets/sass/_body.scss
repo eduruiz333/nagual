@@ -16,4 +16,30 @@ body {
     }
   }
 
+  .conenoc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .especial {
+      display: block;
+      font-size: 100%;
+      
+      &::before {
+        display: block;
+        margin-top: -15%;
+        content: '≡';
+        font-size: 175%;
+      }
+
+      > span {
+        display: none;
+      }
+    }
+
+    .revert {
+      transform: scaleX(-1);
+    }
+  }
+
 }
