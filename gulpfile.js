@@ -1,21 +1,17 @@
-// Configurações para compilar SASS
-'use strict';
+// npm init
+// npm install gulp gulp-sass sass --save-dev
 
-const gulp = require('gulp');
-const sass = require('gulp-sass');
+const { src, dest, watch, series } = require('gulp')
+const sass = require('gulp-sass')(require('sass'))
 
-sass.compiler = require('node-sass');
-
-gulp.task('sass', compilaSass);
-gulp.task('watch', watch);
-
-function compilaSass() {
-    return gulp
-        .src('./assets/sass/**/*.scss')
-        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-        .pipe(gulp.dest('./assets/css'));
+function bildStyles() {
+    return src('./assets/sass/**/*.scss')
+    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+    .pipe(dest('./assets/css/'))
 }
 
-function watch() {
-    gulp.watch('./assets/sass/**/*.scss', compilaSass)
+function watchTask() {
+    watch(['./assets/sass/**/*.scss'], bildStyles)
 }
+
+exports.default = series(bildStyles, watchTask)
