@@ -1,4 +1,5 @@
 // npm init
+//  npm install
 // npm install gulp gulp-sass sass --save-dev
 
 const { src, dest, watch, series } = require('gulp')
