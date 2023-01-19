@@ -1,0 +1,3 @@
+Configurar o Live Sass Compiler
+
+https://hoohoo.top/blog/20210703113717-how-to-customerize-the-live-sass-compiler-settings-for-output-formats/
