@@ -8,6 +8,7 @@
 *.so
 *.app
 *.war
+*.map
 
 # Packages #
 ############

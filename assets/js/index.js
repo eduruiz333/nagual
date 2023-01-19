@@ -3,10 +3,10 @@
 function contador () {
 
 
-    let printContent = document.querySelector('.print-content')
+    const printContent = document.querySelector('.print-content')
 
-    let inicio = 1
-    let fim = 10
+    const inicio = 1
+    const fim = 30
 
     for(let i = inicio; i <= fim; i++) {
         console.log(i)
